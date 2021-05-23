@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+.reg{
+    display: flex;
+    margin: 5px;
+    padding: 10px;
+}
+
+.item{
+    padding: 30px;
+}
+.rt{
+    padding-left: 70px;
+}
+.reg_pan p i{
+  color: #17a2b8;
+}
+
+
+.reg_pan{
+    background-color: #f8f9fa;
+    height: 68px;
+   
+}
+.tx{
+    color: #17a2b8;
+    font-weight: bold;
+}
+
+.btn-outline-success {
+    color: #ffffff !important;
+    background-color: transparent;
+    background-image: none;
+    border-color: #17a2b8 !important;
+}
+
