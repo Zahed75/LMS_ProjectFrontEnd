@@ -128,9 +128,9 @@ font-size: 25px;
 /* info end */
 
 .counter_bg{
-    margin-top: 110px;
-    background-color: rgb(233, 233, 233);
-    height: 450px;
+    margin-top: 220px;
+  background-image: url(../background/biography-bg.png);
+    height: 250px;
     width: auto;
     background-size: cover;
     background-position: center center;
@@ -139,3 +139,50 @@ font-size: 25px;
     background-attachment: fixed;
   
 }
+
+/* counter start */
+.container{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+    padding: 30px 0;
+}
+.content{
+	padding: 10px;
+}
+.icon{
+	font-size: 45px;
+	line-height: 45px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.counter{
+	font-size: 45px;
+	margin: 10px 0;
+}
+h3{
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.icon i{
+
+ color: #34315D;
+
+}
+
+.counter_bg h3{
+    font-weight: bold;
+    font-family:cursive;
+    color: #FF284F;
+}
+.counter{
+    font-family:cursive;
+    font-size: 40px;
+    color: #34315D;
+   
+
+}
+/* counter end */

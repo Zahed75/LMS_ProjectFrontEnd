@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Galada&family=Hind+Siliguri&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Galada&family=Hind+Siliguri&display=swap" rel="stylesheet">
 
     <title>LMS</title>
 </head>
@@ -196,7 +196,8 @@
                     <div class="col-md-6">
                         <h1 class="txh"><span class="txt">ঘরে বসে</span>পড়াশোনার সহজ সমাধান</h1>
                         <p>ক্লাস ১-১২, ভর্তি পরীক্ষা, বিশ্ববিদ্যালয় ও চাকরি জীবনের জন্য পাবে স্পেশাল কোর্স, মডেল টেস্টসহ
-                            ২৪/৭ দিকনির্দেশনা। <span class="txt1">সিলেক্ট করো তোমার সেকশন, </span> শুরু করো তোমার জার্নি</p>
+                            ২৪/৭ দিকনির্দেশনা। <span class="txt1">সিলেক্ট করো তোমার সেকশন, </span> শুরু করো তোমার জার্নি
+                        </p>
                     </div>
                     <div class="col-md-6">
                         <img src="img/el1.gif" alt="">
@@ -208,13 +209,44 @@
     <!-- ======================Info Start======================= -->
 
 
-<!-- ==================== counter start=====================-->
-<div class="container-fluid counter_bg">
-<div class="row">
- 
-</div>
-</div>
-<!-- ==================== counter end=====================-->
+    <!-- ==================== counter start=====================-->
+    <div class="container-fluid counter_bg">
+        <div class="container">
+            
+            <div class="content">
+                <div class="icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="counter" data-target="47000">0</div>
+                <h3>Learner's</h3>
+            </div>
+
+            <div class="content">
+                <div class="icon">
+                    <i class="fas fa-book-reader"></i>
+                </div>
+                <div class="counter" data-target="47000">0</div>
+                <h3>Total Course's</h3>
+            </div>
+    
+            <div class="content">
+                <div class="icon">
+                    <i class="far fa-heart"></i>
+                </div>
+                <div class="counter" data-target="15000">0</div>
+                <h3>Follower's</h3>
+            </div>
+    
+            <div class="content">
+                <div class="icon">
+                    <i class="fas fa-photo-video"></i>
+                </div>
+                <div class="counter" data-target="7000">0</div>
+                <h3>Total Lecture's</h3>
+            </div>
+        </div>
+    </div>
+    <!-- ==================== counter end=====================-->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -227,6 +259,28 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+        <script>
+            const counters = document.querySelectorAll('.counter');
+            const speed = 200;
+    
+            counters.forEach(counter => {
+                const updCount = () =>{
+                    const target = counter.getAttribute('data-target');
+                    const count = +counter.innerText;
+    
+                    const score = target / speed;
+    
+                    if(count < target) {
+                        counter.innerText = count + score;
+                        setTimeout(updCount, 1);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+                updCount();
+            });
+        </script>
+
 </body>
 
 </html>
