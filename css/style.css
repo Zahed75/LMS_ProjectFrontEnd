@@ -54,10 +54,7 @@ img { max-width: 100%; height: auto; }
 /* end */
 
 
-/* 
-.fstnav ul li a   {
-    color: #17A2B8;
-}  */
+
 
 /* slider start */
 .tx{
@@ -95,7 +92,7 @@ img { max-width: 100%; height: auto; }
     color: #fff;
     border: none;
     border-radius: 8px;
-    padding: 9px 25px;
+    padding: 5px 15px;
     cursor: pointer;
 }
 
@@ -211,10 +208,16 @@ position: relative;
         /* border-top: 3px lightskyblue solid; */
         margin-top: 120px;
     }
+
+    
+
+
     .counters i{
         padding-top: 70px;
         color: #34315D;
         font-size: 40px;
+        margin: 10px;
+        margin-left: 18px;
     
     }
     .counter{
@@ -227,6 +230,7 @@ position: relative;
         color: #34315D;
         font-weight: bold;
         font-style: italic;
+      
     }
     
     .cn{
@@ -288,13 +292,53 @@ position: relative;
 .ln p{
     text-transform: capitalize;
    font-weight: bold;
-
+  
+}
 /* Learn End */
 
 
+
+
+
+
 /* course start */
+.crs_sec,h3{
+   
+text-align: center;
+font-weight: bold;
 
 
-/* course end */
+}
 
+#course_cat{
+  background-image: url(../background/header-bg.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+    height: auto;
+    width: auto;
+    padding: 40px 20px;
+  
+    margin-top: 120px;
+}
+
+#course_cat h3{
+    text-align: center;
+    font-weight: bold;
+}
+.card{
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px lightgray;
+}
+.card-deck{
+    margin-top: 70px;
+}
+.card-footer{
+    background-color: white;
+    border-top: none;
+}
+/* course end*/
 
