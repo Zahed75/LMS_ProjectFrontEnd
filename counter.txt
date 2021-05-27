@@ -1,102 +1,98 @@
-<div class="container">
-<div class="row">
-    <div class="container counter_bg">
-        <h2>People's <span class="cn" >Intercation's</span> </h2>
-        <div class="container">
-            
-            <div class=" col-md-4 content">
-                <div class="icon">
-                    <i class="fas fa-users"></i>
-                </div>
-                <div class="counter" data-target="47000">0</div>
-                <h3>Learner's</h3>
-            </div>
 
-            <div class=" col-md-4 content">
-                <div class="icon">
-                    <i class="fas fa-book-reader"></i>
+    <!-- ==================== counter start=====================-->
+    <section class="counters">
+        <h2>Peoples Interaction</h2>
+        <div class="container">
+           <div class="row">
+                <div class="col-md-3">
+                    <div>
+                        <i class="fas fa-users"></i>
+                        <div class="counter" data-target="60000">0</div>
+                        <h3>Learner's</h3>
+                    </div>
                 </div>
-                <div class="counter" data-target="47000">0</div>
-                <h3>Total Course's</h3>
-            </div>
-    
-            <div class=" col-md-4content">
-                <div class="icon">
-                    <i class="far fa-heart"></i>
+                <div class="col-md-3">
+                    <div>
+                        <i class="fas fa-book-reader"></i>
+                        <div class="counter" data-target="15000">0</div>
+                        <h3>Total Course's</h3>
+                    </div>
                 </div>
-                <div class="counter" data-target="15000">0</div>
-                <h3>Follower's</h3>
-            </div>
-    
-            <div class="content">
-                <div class="icon">
-                    <i class="fas fa-photo-video"></i>
+
+
+                <div class="col-md-3">
+                     <div>
+                        <i class="far fa-heart"></i>
+                        <div class="counter" data-target="9000">0</div>
+                        <h3>Follower's</h3>
+                    </div>
                 </div>
-                <div class="counter" data-target="7000">0</div>
+
+                <div class="col-md-3">
+                    <div>
+                <i class="fas fa-photo-video"></i>
+                <div class="counter" data-target="5000">0</div>
                 <h3>Total Lecture's</h3>
             </div>
+               </div>
+
         </div>
-    </div>
-</div>
-   </div>
+    </section>
+    <!-- ==================== counter end=====================-->
 
-CSSSSSSSS
+css
 
 
-/* counter start */
-.container{
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	width: 100%;
-    padding: 30px 0;
-}
-.content{
-	padding: 10px;
-}
-.icon{
-	font-size: 45px;
-	line-height: 45px;
-	text-align: center;
+
+
+
+.container {
+	max-width: 1100px;
 	margin: 0 auto;
+	overflow: auto;
 }
 
-.counter{
-	font-size: 45px;
-	margin: 10px 0;
-}
-h3{
-	font-size: 18px;
-	text-transform: uppercase;
-}
 
-.icon i{
 
- color: #34315D;
 
+.counters {
+	background-image: url(../background/Ims-background-1.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+    height: 555px;
+    width: auto;
+	padding: 40px 20px;
+	/* border-top: 3px lightskyblue solid; */
+    margin-top: 120px;
 }
-
-.counter_bg h3{
-    font-weight: bold;
-    font-family:cursive;
-    color: #FF284F;
-}
-.counter{
-    font-family:cursive;
-    font-size: 40px;
+.counters i{
+    padding-top: 120px;
     color: #34315D;
-   
+    font-size: 40px;
 
 }
-
-.cn{
+.counter{
     color: #FF284F;
     font-weight: bold;
-    
+    font-size: 30px;
 }
-.counter_bg h2{
-   padding: 20px;
- text-align: center;
-font-style: italic;
+
+.counters h3{
+    color: #34315D;
+    font-weight: bold;
+    font-style: italic;
 }
-/* counter end */
+
+
+
+
+/* Counter End */
+
+
+
+
+
+

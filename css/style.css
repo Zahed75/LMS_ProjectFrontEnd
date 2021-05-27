@@ -5,6 +5,32 @@ html ,body{
     font-family: 'Rubik', sans-serif;
     
 }
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+
+
+img { max-width: 100%; height: auto; }
+
+@media (min-device-width:600px) {
+    img[data-src-600px] {
+        content: attr(data-src-600px, url);
+    }
+}
+
+@media (min-device-width:800px) {
+    img[data-src-800px] {
+        content: attr(data-src-800px, url);
+    }
+}
 
 /* navbar start */
 .fstnav ul li a{
@@ -106,23 +132,25 @@ position: relative;
 
 
 }
+
+
+
+
+
+
 .buy-now{
+
     background-image: linear-gradient(to bottom, #FF589B 0%, #FF136F 100%);
     color: #fff;
     border: none;
     border-radius: 8px;
     padding: 9px 25px;
     cursor: pointer;
-}
 
 
 }
 
-#info img{
-   height: 320px;
-   width: 220px;
- 
-} 
+
 
 
 .txt{
@@ -130,102 +158,143 @@ position: relative;
     font-weight: bold;
     font-family: 'Galada', cursive;
 }
+
+
 .txh{
     color: #34315D;
     font-weight: bold;
     font-family: 'Galada', cursive;
 }
 
+
 .learning p{
-font-family: 'Galada', cursive;
-font-family: 'Hind Siliguri', sans-serif;
-font-size: 25px;
+    font-family: 'Galada', cursive;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 25px;
+    }
+
+
+
+
+    #info {
+        margin-top: 20px;
+        padding: 10px;
+        /* height: 526px; */
+        width: 100%;
+        height: auto;
+    }
+    
+    
+    .txt1{
+        color: #FF284F;
+    }
+
+    /* Info End */
+
+
+
+
+
+
+
+
+    .counters {
+        background-image: url(../background/Ims-background-1.png);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        position: relative;
+        background-attachment: fixed;
+        height: auto;
+        width: auto;
+        padding: 40px 20px;
+        /* border-top: 3px lightskyblue solid; */
+        margin-top: 120px;
+    }
+    .counters i{
+        padding-top: 70px;
+        color: #34315D;
+        font-size: 40px;
+    
+    }
+    .counter{
+        color: #FF284F;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    
+    .counters h3{
+        color: #34315D;
+        font-weight: bold;
+        font-style: italic;
+    }
+    
+    .cn{
+        color: #FF136F;
+    }
+    .cnn{
+        text-align: center;
+        font-weight: bold;
+        font-style: italic;
+      
+      
+    }
+    
+    
+    /* Counter End */
+    
+
+
+
+
+
+
+
+
+
+
+
+
+/* Learn start  */
+#learn_panel{
+    width: 100%;
+    height: auto;
+    background-image: url(../background/latest-work-bg.png);
+
+     background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        position: relative;
+        background-attachment: fixed;
+        height: auto;
+        width: auto;
+        padding: 40px 20px;
+      
+        margin-top: 120px;
 }
 
-#info{
-    margin-top: 20px;
-    padding: 10px;
-}
-.txt1{
-    color: #FF284F;
+.ln{
+    padding: 20px;
 }
 
-/* info end */
-
-
-/* Counter Start */
-
-/* * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-} */
-
-
-
-.container {
-	max-width: 1100px;
-	margin: 0 auto;
-	overflow: auto;
-}
-
-
-
-
-.counters {
-	background-image: url(../background/Ims-background-1.png);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    position: relative;
-    background-attachment: fixed;
-    height: 350px;
-    width: auto;
-	padding: 40px 20px;
-	/* border-top: 3px lightskyblue solid; */
-    margin-top: 320px;
-}
-.counter{
-
-    color: #34315D;
-    font-weight: bold;
-}
-.counters .container {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-gap: 30px;
-	text-align: center;
-}
-
-.counters i {
-    margin-top: 30px;
-color: #FF136F;
-	margin-bottom: 5px;
-   font-size: 40px;
-}
-
-.counters .counter {
-	font-size: 45px;
-	margin: 10px 0;
-}
-
-@media (max-width: 700px) {
-	.counters .container {
-		grid-template-columns: repeat(2, 1fr);
-	}
-
-	.counters .container > div:nth-of-type(1),
-	.counters .container > div:nth-of-type(2) {
-		border-bottom: 1px lightskyblue solid;
-		padding-bottom: 20px;
-	}
-}
-
-.counters h3{
+#learn_panel h2{
+    text-align: center;
    
-    font-family: 'Rubik', sans-serif;
-    color: #FF136F;
-    font-weight: bold;
-    font-style: italic;
 }
-/* Counter End */
+.lntxt{
+    font-weight: bold;
+    color: #34315D;
+}
+.ln p{
+    text-transform: capitalize;
+   font-weight: bold;
+
+/* Learn End */
+
+
+/* course start */
+
+
+/* course end */
+
+
