@@ -327,18 +327,94 @@ font-weight: bold;
 #course_cat h3{
     text-align: center;
     font-weight: bold;
+   color: #34315D;
 }
+
+
 .card{
     border: none;
     border-radius: 10px;
     box-shadow: 5px 5px 10px lightgray;
 }
+
+
 .card-deck{
     margin-top: 70px;
 }
+
+
 .card-footer{
     background-color: white;
     border-top: none;
 }
 /* course end*/
 
+/* Review Start */
+#review{
+    background-image: url(../background/header-bg.png);
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      position: relative;
+      background-attachment: fixed;
+      height: auto;
+      width: auto;
+      padding: 40px 20px;
+    
+      margin-top: 120px;
+  }
+.rv_text h3{
+    margin-top: 70px;
+    padding: 10px;
+    color: #34315D;
+}
+/* Review End */
+
+/* Update news start */
+
+#update_news{
+    background-color: #fff;
+    height: auto;
+    width: auto;
+    background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      position: relative;
+      background-attachment: fixed;
+      margin-top: 30px;
+      padding: 30px;
+}
+
+.card-columns{
+   margin-top: 20px;
+}
+
+
+
+.card-columns .card {
+    display: inline-block;
+    width: 100%;
+    margin-top: 6px;
+}
+
+.updt{
+    margin-top: 30px;
+}
+/* Update news end */
+
+/* Footer Start */
+
+#footer{
+    background-image: url(../background/bg7.png);
+
+    background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      position: relative;
+      background-attachment: fixed;
+      margin-top: 30px;
+      padding: 30px;
+      height: 450px;
+}
+
+/* Footer End */
