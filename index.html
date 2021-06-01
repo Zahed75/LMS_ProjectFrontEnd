@@ -55,11 +55,11 @@
                         <a class="nav-link" href="#">&nbsp;<i class="fas fa-paper-plane tx">teamahoban@yahoo.com</i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">&nbsp;<i
+                        <a class="nav-link" href="login.html">&nbsp;<i
                                 class="fas fa-user-lock btn btn-info btn-sm ">Login</i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#">&nbsp;<i
+                        <a class="nav-link " href="sigunup.html">&nbsp;<i
                                 class="fas fa-user-plus btn btn-info btn-sm">Register</i></a>
                     </li>
                 </ul>
@@ -640,6 +640,24 @@
     <script src="js/counter.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+
+    <script>
+        var owl = $('.owl-carousel');
+owl.owlCarousel({
+    items:4,
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true
+});
+$('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[1000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+})
+    </script>
 
 
 
