@@ -828,6 +828,16 @@ small {
 
 .register{
     background-color: #19123B;
+
+    height: auto;
+    width: auto;
+    background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      position: relative;
+      background-attachment: fixed;
+      margin-top: 30px;
+      padding: 30px;
 }
 
 
@@ -853,7 +863,5 @@ select.form-control {
     color: #ffffff;
 }
 
-.font-italic{
-    color: #FF136F;
-}
+
 /* SignUp End */
