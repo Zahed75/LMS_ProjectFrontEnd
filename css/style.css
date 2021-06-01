@@ -753,7 +753,7 @@ small {
 
 .logging {
         /* background-color: #19123B; */
-        background-image: url(../background/biography-bg.png);
+        background-image: url(../background/latest-work-bg.png);
         background-attachment: fixed;
         background-size: cover;
         background-position: center center;
@@ -829,7 +829,7 @@ small {
 
 .register{
     /* background-color: #19123B; */
-    background-image: url(../background/Ims-background-1.png);
+    background-image: url(../background/latest-work-bg.png);
 
     height: auto;
     width: auto;
